@@ -10,10 +10,5 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const prisma = new PrismaClient();
-
-  const test = await prisma.users.findMany();
-  console.log(test);
-
-  res.status(200).json({ name: 'John Doe' })
+  res.status(200).json({ name: 'test' });
 }

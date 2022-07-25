@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons+Outlined);
+
 html,
 body {
   padding: 0;
@@ -13,4 +16,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
 }
