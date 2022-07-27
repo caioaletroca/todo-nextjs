@@ -5,7 +5,7 @@ import TextField, { TextFieldProps } from "./TextField";
 export interface PasswordFieldProps extends TextFieldProps {}
 
 function PasswordField (props: PasswordFieldProps) {
-    const [visibility, useVisibility] = React.useState(false);
+    const [visibility, setVisibility] = React.useState(false);
 
     return (
         <TextField
@@ -13,7 +13,7 @@ function PasswordField (props: PasswordFieldProps) {
             InputProps={{
                 endAdornment:
                     <InputAdornment position='end'>
-                        <IconButton onClick={() => useVisibility(!visibility)}>
+                        <IconButton onClick={() => setVisibility(!visibility)}>
                             <span className="material-icons">{visibility ? "visibility_off" : "visibility"}</span>
                         </IconButton>
                     </InputAdornment>
