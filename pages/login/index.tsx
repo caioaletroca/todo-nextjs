@@ -13,13 +13,13 @@ const initialValues = {
 }
 
 const schema = object({
-  email: user.email.required(),
+  // email: user.email.required(),
   password: user.password.required()
 })
 
 const Login: NextPage = () => {
   const handleSubmit = (values : typeof initialValues) => {
-    signIn("credentials", {
+    signIn("keycloak", {
       username: values.email,
       password: values.password
     });
